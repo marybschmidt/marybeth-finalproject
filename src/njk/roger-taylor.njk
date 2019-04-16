@@ -1,0 +1,22 @@
+{% extends '_layouts/detail.njk' %}
+{% block page_title %}Roger Taylor{% endblock %}
+
+{% block content %}
+<article class="container">
+  <div class="row">
+    <div class="col-sm-4 left-rail">
+      {% block info %} 
+      <img src="img/members/roger-taylor-color.jpg" alt="pirate character" class="img-fluid">
+      <p class="byline">Roger Taylor<br>
+      {% endblock %}
+    </div>
+    <div class="col-sm-8">
+       {% block story %}
+      <h2>Roger Taylor</h2>
+      <p>Ishmael is a fictional character in Herman Melville's Moby-Dick. Ishmael, the only surviving crewmember of the Pequod, is the narrator of the book. His importance relies on his role as narrator; as a character, he is only a minor participant in the action and the main protagonist is Captain Ahab.</p>
+      {% endblock %}
+      
+    </div>
+  </div>
+</article>
+{% endblock %}

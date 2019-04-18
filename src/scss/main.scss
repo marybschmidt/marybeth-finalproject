@@ -22,3 +22,17 @@
 @import "nav";
 @import "discography";
 
+
+html body {
+  background-color: black;
+}
+
+body  {
+  color: lightgray;
+}
+
+.responsive {
+  padding-top: 25px;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,11 @@
+#discography li {
+  list-style-type: none;
+  border-bottom: 1px;
+  float: left;
+  width: 48%;
+}
+
+#discography li:nth-child(odd) {
+  clear: both;
+  margin-right: 10px;
+}

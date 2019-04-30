@@ -1,19 +1,24 @@
 {% extends '_layouts/base.njk' %}
 
+{% block page_title %}{{ members.name }}{% endblock %}
+
 {% block content %}
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-      {% block info %} 
-      <img src="img/members/freddie-mercury-color.jpg" alt="pirate character" class="img-fluid">
-      <p class="byline">Freddie Mercury<br>
-      {% endblock %}
+      <p class="byline">{{ members.imagebw }}
+          <p>{{ members.name }}</p>
+          <p>{{ members.instruments }}</p>
+          <p>{{ members.tenure }}</p>
+          <p>{{ members.birthplace }}</p> 
+          <p>{{ members.birthdate }}</p> 
+      </p>
+      <img src= "{{ members.image }}" alt="John Deacon" class="img-fluid"> 
     </div>
     <div class="col-sm-8">
-      {% block story %}{% endblock %}
-      
+      <h2 style="text-align: center">{{ members.name }}</h2>
+          {{ members.text | safe }}
     </div>
   </div>
 </article>
 {% endblock %}
-

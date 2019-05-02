@@ -5,20 +5,26 @@
 {% block content %}
 <article class="container">
   <div class="row">
-    <div class="col-sm-4 left-rail">
-      <p class="byline">{{ members.imagebw }}
+    <div class="col-sm-2 left-rail">
+      <p class="byline">
+      <img src= "img/members/{{ members.imagebw }}" height="200" width="200" alt="{{ members.name }}" class="img-fluid"> 
           <p>{{ members.name }}</p>
           <p>{{ members.instruments }}</p>
-          <p>{{ members.tenure }}</p>
-          <p>{{ members.birthplace }}</p> 
-          <p>{{ members.birthdate }}</p> 
       </p>
-      <img src= "{{ members.image }}" alt="John Deacon" class="img-fluid"> 
     </div>
+
     <div class="col-sm-8">
       <h2 style="text-align: center">{{ members.name }}</h2>
           {{ members.text | safe }}
     </div>
+
+    <div class="col-sm-2 right-rail">
+      <p class="byline">
+      <img src= "img/members/{{ members.image }}" height="200" width="200" alt="{{ members.name }}" class="img-fluid">  
+          <p>{{ members.tenure }}</p>
+          <p>{{ members.birthplace }}</p> 
+          <p>{{ members.birthdate }}</p> 
+      </p>
   </div>
 </article>
 {% endblock %}

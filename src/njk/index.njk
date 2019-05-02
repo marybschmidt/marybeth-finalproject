@@ -16,7 +16,7 @@
         <ul>
            <li>
            <img class="mr-3" src="img/discs/Queen_Hot_Space.png" height="64" width="64" alt="Hot Space">
-            <span class="nutri-item">Hot Space</span>
+            <span class="nutri-item">{Hot Space}</span>
             <span class="nutri-value">| 1982</span>
             </li>
             <li>
@@ -75,25 +75,23 @@
             <span class="nutri-value">| 1976</span>
             </li>
         </ul>
-    </div>
+  </div>
+
+{% for discography in data.discography %}
+<div id="discography">
+  <ul>
+    <li>
+    <img class="mr-3" src="img/discs/{{ discography.image }}" height="64" width="64">
+    <span class="nutri-item">{{ discography.title }}</span>
+    <span class="nutri-value">| {{ discography.year }}</span>
+    </li>
+  </ul>
 </div>
+{% endfor %}
+
 
 
 {% endblock %}
 
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="band-members" style="text-align:center;">
-        <a class="band-member-name" href="freddie-mercury.html">Freddie Mercury</a>
-        &nbsp;&nbsp;&nbsp;
-        <a class="band-member-name" href="brian-may.html">Brian May</a>
-        &nbsp;&nbsp;&nbsp;
-        <a class="band-member-name" href="john-deacon.html">John Deacon</a>
-        &nbsp;&nbsp;&nbsp;
-        <a class="band-member-name" href="roger-taylor.html">Roger Taylor</a>
-        &nbsp;&nbsp;&nbsp;
-      </div>
-    </div>
-  </div>
+
 

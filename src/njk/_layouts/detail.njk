@@ -5,7 +5,7 @@
 {% block content %}
 <article class="container">
   <div class="row">
-    <div class="col-sm-2 left-rail">
+    <div class="col-sm-12 col-lg-4 left-rail">
       <p class="byline">
       <img src= "img/members/{{ members.imagebw }}" height="200" width="200" alt="{{ members.name }}" class="img-fluid"> 
           <p>{{ members.name }}</p>
@@ -13,12 +13,12 @@
       </p>
     </div>
 
-    <div class="col-sm-8">
+    <div class="col-sm-6 col-lg-4">
       <h2 style="text-align: center">{{ members.name }}</h2>
           {{ members.text | safe }}<br><br>
     </div>
 
-    <div class="col-sm-2 right-rail">
+    <div class="col-sm-6 col-lg-4 right-rail">
       <p class="byline">
       <img src= "img/members/{{ members.image }}" height="200" width="200" alt="{{ members.name }}" class="img-fluid">  
           <p>{{ members.tenure }}</p>

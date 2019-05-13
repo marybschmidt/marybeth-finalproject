@@ -11,19 +11,22 @@
     </div>
   </div>
 
-<div  id="discography" >
- <h2 style="text-align:center; padding-top:50px">Albums</h2>
-  <ul>
-    {% for discography in data.discography %}
+<div id="discography">
+  <h2 style="text-align:center; padding-top:50px">Albums</h2>
+    <div class="col-sm-8 col-md-12 col-lg-12 text-left">
+    <ul>
+      {% for discography in data.discography %}
         <li>
         <img class="mr-3" src="img/discs/{{ discography.image }}" height="64" width="64">
         <span class="nutri-item">{{ discography.title }}</span>
         <span class="nutri-value">| {{ discography.year }}</span>
         </li>
-    {% endfor %}
-  </ul>
+      {% endfor %}
+    </ul>
+    </div>
 </div>
 </div>
+
 
 {% endblock %}
 
